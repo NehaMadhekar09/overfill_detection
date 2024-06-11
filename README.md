@@ -38,14 +38,20 @@ cd ros2_ws
 ros2 launch overfill_detection launch.py
 ```
 ## Test instructions
+Open a new terminal
+
+
+```
+. install/setup.bash
+```
 
 To test the solution, objects of varying sizes are spawned in Gazebo at different locations. If overfill is detected, the solution will print a message indicating so.
 
 Below are the commands to spawn objects in Gazebo. Objects can be deleted after the test.
 
+
 ```
 ros2 service call /spawn_entity gazebo_msgs/SpawnEntity "{name: 'my_box1', xml: '<sdf version=\"1.7\"><model name=\"my_box\"><pose>0.6 0 0.75 0 0 0</pose><static>false</static><link name=\"link\"><collision name=\"collision\"><geometry><box><size>0.2 0.2 1.5</size></box></geometry></collision><visual name=\"visual\"><geometry><box><size>0.2 0.2 1.5</size></box></geometry></visual></link></model></sdf>'}"
-
 ```
 
 ```
