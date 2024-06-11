@@ -59,7 +59,7 @@ ros2 service call /spawn_entity gazebo_msgs/SpawnEntity "{name: 'my_box2', xml: 
 ```
 
 ```
-ros2 service call /spawn_entity gazebo_msgs/SpawnEntity "{name: 'my_box3', xml: '<sdf version=\"1.7\"><model name=\"my_box\"><pose>1 0 0.75 0 0 0</pose><static>false</static><link name=\"link\"><collision name=\"collision\"><geometry><box><size>0.3 0.3 1.5</size></box></geometry></collision><visual name=\"visual\"><geometry><box><size>0.3 0.3 1.5</size></box></geometry></visual></link></model></sdf>'}"
+ros2 service call /spawn_entity gazebo_msgs/SpawnEntity "{name: 'my_box3', xml: '<sdf version=\"1.7\"><model name=\"my_box\"><pose>1.1 0 0.75 0 0 0</pose><static>false</static><link name=\"link\"><collision name=\"collision\"><geometry><box><size>0.3 0.3 1.5</size></box></geometry></collision><visual name=\"visual\"><geometry><box><size>0.3 0.3 1.5</size></box></geometry></visual></link></model></sdf>'}"
 ```
 
 ```
