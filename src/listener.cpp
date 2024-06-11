@@ -49,9 +49,9 @@ private:
     // based on number of samples and distance of the tote from sensor.
 
     for (int i = 100; i < 300; i++) {
-      // 0.85 distance is decided based on tote size and distance of the tote
+      // 0.8 distance is decided based on tote size and distance of the tote
       // from sensor.
-      if (laser_data[i] < 0.85) {
+      if (laser_data[i] < 0.8) {
         RCLCPP_INFO(this->get_logger(), "Overfilled ...");
         return;
       }
